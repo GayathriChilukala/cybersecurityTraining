@@ -36,3 +36,14 @@ The ResNet model utilizes residual blocks to enable deeper networks without degr
 - **Batch Size:** 8
 - **Epochs:** 25
 - **Learning Rate:** 0.00001
+
+# Python UDP Flood
+
+This is a DoS attack program to flood servers using UDP or TCP packets. You can set the IP, port, and the number of packets to send per connection. This tool is created for educational purposes and to demonstrate network security concepts.
+
+## Features
+
+- Supports both UDP and TCP flooding.
+- Customizable target IP, port, packet count, and thread count.
+- Multi-threaded to maximize the flooding effect.
+
