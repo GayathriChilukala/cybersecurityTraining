@@ -80,5 +80,52 @@ This project focuses on forecasting daily power consumption using a Convolutiona
   - Lower RMSE values indicate better model performance.
 
 
+# Dog and Cat Classification using CNN
+
+This project focuses on classifying images of dogs and cats using a Convolutional Neural Network (CNN) implemented with Keras. The model architecture includes several convolutional layers followed by max-pooling layers, and finally dense layers to perform the classification.
+
+## Model Architecture
+
+The CNN model is designed as follows:
+
+1. **Convolutional Layer 1:**
+   - 32 filters, each of size 3x3.
+   - ReLU activation function.
+   - Input shape is defined by the image height, width, and 3 color channels (RGB).
+
+2. **Max-Pooling Layer 1:**
+   - Pool size of 3x3 to reduce the spatial dimensions of the output from the previous layer.
+
+3. **Convolutional Layer 2:**
+   - 32 filters, each of size 3x3.
+   - ReLU activation function.
+
+4. **Max-Pooling Layer 2:**
+   - Pool size of 2x2 to further reduce the spatial dimensions of the output.
+
+5. **Flatten Layer:**
+   - Flattens the multi-dimensional output from the previous layer into a single dimension, preparing it for the fully connected layers.
+
+6. **Dense Layer 1:**
+   - 100 units.
+   - ReLU activation function.
+   - Followed by a Dropout layer with a rate of 0.5 to prevent overfitting by randomly setting half of the input units to 0 at each update during training.
+
+7. **Output Layer:**
+   - 1 unit.
+   - Sigmoid activation function to produce a probability value for binary classification (dog or cat).
+
+8. **Compilation:**
+   - Loss function: Binary Cross-Entropy, suitable for binary classification tasks.
+   - Optimizer: RMSprop, which is effective for this type of neural network.
+   - Metrics: Accuracy, to monitor the performance of the model during training and testing.
+
+By using this architecture, the model learns to identify and classify images of dogs and cats effectively.
+
+## Data
+
+- **Dataset:** Images of dogs and cats.
+- **Image Dimensions:** Customizable through `IMAGE_HEIGHT` and `IMAGE_WIDTH`.
+- **Format:** RGB images.
 
 
