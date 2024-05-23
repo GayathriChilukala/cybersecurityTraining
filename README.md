@@ -47,3 +47,38 @@ This is a DoS attack program to flood servers using UDP or TCP packets. You can 
 - Customizable target IP, port, packet count, and thread count.
 - Multi-threaded to maximize the flooding effect.
 
+# Time-Series Forecasting with CNN
+
+This project focuses on forecasting daily power consumption using a Convolutional Neural Network (CNN). The model is built using the 'Household Power Consumption' dataset from the UCI Machine Learning Repository, which contains daily power consumption data in kilowatts from 2006 to 2010.
+
+## Business Problem
+
+**Objective:** Predict the next 7 days of daily power consumption based on a specified number of prior days.
+
+## Data
+
+- **Dataset:** Household Power Consumption
+- **Units:** Kilowatts
+- **Frequency:** Daily
+- **Time Range:** 2006 to 2010
+
+## Strategy
+
+1. **Time-sequence Forecasting: Autoregression**
+   - Predict future power consumption using past consumption data.
+   - Example: Predict the next week’s consumption based on the previous week.
+
+2. **Model: Convolutional Neural Network (CNN)**
+   - Low-bias model suitable for capturing non-linear relationships.
+   - Implemented using Keras.
+
+## Model Evaluation
+
+- **Metric:** Root Mean Square Error (RMSE)
+  - RMSE measures the average magnitude of errors in predictions.
+  - It is expressed in the same units as the data (kilowatts), making it straightforward to interpret.
+  - Lower RMSE values indicate better model performance.
+
+
+
+
