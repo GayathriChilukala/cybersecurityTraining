@@ -128,6 +128,34 @@ By using this architecture, the model learns to identify and classify images of 
 - **Image Dimensions:** Customizable through `IMAGE_HEIGHT` and `IMAGE_WIDTH`.
 - **Format:** RGB images.
 
+# Time-Series Forecasting Using CNN for Power Consumption
+This tutorial was modified from the time-series-forecasting-CNN repository.
+
+## Business Problem
+Given some number of prior days of total daily power consumption, the goal is to predict the next standard week of daily power consumption.
+## Data
+
+**Dataset:**  'Household Power Consumption' from the UCI Machine Learning Repository
+**Units:**  Kilowatts
+**Frequency:** Daily
+**Time Range:** 2006 to 2010
+## Strategy
+**Time-Sequence Forecasting: Autoregression**
+	•	Predict a forecast for y number of days into the future based on x number of days up to the current day (e.g., predict the next week from this week).
+**Convolutional Neural Network**
+	•	Use a low-bias model that can learn non-linear relationships.
+	•	Implemented in Keras.
+## Model Evaluation
+	•	Evaluate each forecast day individually.
+	•	Use RMSE (Root Mean Squared Error) as the metric, in kilowatts.
+## Prepare Data
+**Download Data**
+	•	Download the 'Household Power Consumption' dataset from the UCI Machine Learning Repository.
+**Clean Data**
+	•	Perform necessary data cleaning steps to handle missing values and outliers.
+**Downsample Data**
+	•	Downsample the data to a daily frequency if needed.
+ 
 # Microgrid Energy Optimization Using Q-Learning
 This repository contains the MATLAB code for optimizing a simplified microgrid energy setup using a single Q-learning agent. The code is designed for academic training and was initially supported by the NSF CyberTraining project.
 
