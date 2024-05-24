@@ -134,29 +134,28 @@ This repository contains the MATLAB code for optimizing a simplified microgrid e
 ## Code Explanation
 The main components of the code are as follows:
 
-Initialization and Setup
+1. **Initialization and Setup**
 Clears the workspace, initializes battery parameters, and defines the state space.
 
-Q-Table Definition
+2. **Q-Table Definition**
 Initializes the Q-table for storing Q-values.
 
-Parameters
+3. **Parameters**
 Defines the initial parameters for the Q-learning algorithm.
 
-Main Loop
+4. **Main Loop**
 Runs multiple simulations to train the Q-learning agent.
 
-Iteration Loop
+5. **Iteration Loop**
 Iterates over training episodes and updates the Q-table based on the agent's actions and received rewards.
 
-Action Selection
+6. **Action Selection**
 Chooses actions using an epsilon-greedy strategy to balance exploration and exploitation.
 
-Q-Table Update
+7. **Q-Table Update**
 Updates the Q-table based on the obtained rewards and future state estimates.
 
-Results and Plotting
+8. **Results and Plotting**
 Calculates and plots the results to visualize the learning process and the battery state of charge (SOC) over time.
 
-For a detailed explanation of the code, refer to the comments within the script.
 
