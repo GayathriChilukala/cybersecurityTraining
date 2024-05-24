@@ -151,8 +151,10 @@ Given some number of prior days of total daily power consumption, the goal is to
 ## Prepare Data
 **Download Data**
 	•	Download the 'Household Power Consumption' dataset from the UCI Machine Learning Repository.
+ 
 **Clean Data**
 	•	Perform necessary data cleaning steps to handle missing values and outliers.
+ 
 **Downsample Data**
 	•	Downsample the data to a daily frequency if needed.
  
