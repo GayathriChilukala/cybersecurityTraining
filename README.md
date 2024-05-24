@@ -128,4 +128,35 @@ By using this architecture, the model learns to identify and classify images of 
 - **Image Dimensions:** Customizable through `IMAGE_HEIGHT` and `IMAGE_WIDTH`.
 - **Format:** RGB images.
 
+# Microgrid Energy Optimization Using Q-Learning
+This repository contains the MATLAB code for optimizing a simplified microgrid energy setup using a single Q-learning agent. The code is designed for academic training and was initially supported by the NSF CyberTraining project.
+
+## Code Explanation
+The main components of the code are as follows:
+
+Initialization and Setup
+Clears the workspace, initializes battery parameters, and defines the state space.
+
+Q-Table Definition
+Initializes the Q-table for storing Q-values.
+
+Parameters
+Defines the initial parameters for the Q-learning algorithm.
+
+Main Loop
+Runs multiple simulations to train the Q-learning agent.
+
+Iteration Loop
+Iterates over training episodes and updates the Q-table based on the agent's actions and received rewards.
+
+Action Selection
+Chooses actions using an epsilon-greedy strategy to balance exploration and exploitation.
+
+Q-Table Update
+Updates the Q-table based on the obtained rewards and future state estimates.
+
+Results and Plotting
+Calculates and plots the results to visualize the learning process and the battery state of charge (SOC) over time.
+
+For a detailed explanation of the code, refer to the comments within the script.
 
