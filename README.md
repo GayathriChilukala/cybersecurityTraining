@@ -198,9 +198,9 @@ This project simulates the performance of a WEC using different wave conditions.
 ### Simulation Data
 Initializes the simulation class and sets simulation parameters such as start time, end time, solver type, and time step.
 
-#### Wave Information
+### Wave Information
 Configures the wave conditions, such as wave type, height, and period.
-#### Body Data
+### Body Data
 Defines the physical properties and hydrodynamic data for the WEC components.
-#### PTO and Constraint Parameters
+### PTO and Constraint Parameters
 Sets up the Power Take-Off (PTO) components and constraints, which control the energy conversion process.
