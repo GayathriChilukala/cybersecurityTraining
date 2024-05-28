@@ -188,4 +188,19 @@ Updates the Q-table based on the obtained rewards and future state estimates.
 8. **Results and Plotting**
 Calculates and plots the results to visualize the learning process and the battery state of charge (SOC) over time.
 
+# WEC-Sim Simulation Project
+This repository contains MATLAB scripts for simulating a wave energy converter (WEC) using WEC-Sim (Wave Energy Converter SIMulator).
 
+## Project Overview
+This project simulates the performance of a WEC using different wave conditions. The simulation helps evaluate the behavior and efficiency of the WEC.
+
+## Script Breakdown
+### Simulation Data
+Initializes the simulation class and sets simulation parameters such as start time, end time, solver type, and time step.
+
+#### Wave Information
+Configures the wave conditions, such as wave type, height, and period.
+#### Body Data
+Defines the physical properties and hydrodynamic data for the WEC components.
+#### PTO and Constraint Parameters
+Sets up the Power Take-Off (PTO) components and constraints, which control the energy conversion process.
