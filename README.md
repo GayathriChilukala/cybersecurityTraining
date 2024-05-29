@@ -204,3 +204,48 @@ Configures the wave conditions, such as wave type, height, and period.
 Defines the physical properties and hydrodynamic data for the WEC components.
 ### PTO and Constraint Parameters
 Sets up the Power Take-Off (PTO) components and constraints, which control the energy conversion process.
+
+# Hardware Trojan Detection
+## Overview
+This project focuses on detecting hardware Trojans using machine learning techniques. Hardware Trojans are malicious alterations to a circuit that can cause incorrect behavior or leak sensitive information. Detecting such Trojans is crucial for ensuring the security and reliability of hardware systems.
+
+## Project Structure
+The project is organized into the following directories and files:
+
+├── DFG3
+│   ├── metadata.tsv
+│   └── vectors.tsv
+├── AST3
+    ├── metadata.tsv
+    └── vectors.tsv
+
+## Data
+The data consists of two main parts:
+
+### DFG3 Dataset:
+
+DFG3/metadata.tsv: Metadata file for DFG3 dataset.
+DFG3/vectors.tsv: Vector file for DFG3 dataset.
+AST3 Dataset:
+
+AST3/metadata.tsv: Metadata file for AST3 dataset.
+AST3/vectors.tsv: Vector file for AST3 dataset.
+
+## Results
+### AST Dataset
+We performed cross-validation using StratifiedKFold with 4 splits. Here are the accuracy scores for each fold and the overall accuracy:
+
+Fold 0: 0.6666666666666666
+Fold 1: 0.8333333333333334
+Fold 2: 0.5
+Fold 3: 0.8
+Overall Accuracy: 0.7
+
+### DFG Dataset
+Similarly, we performed cross-validation using StratifiedKFold with 4 splits for the DFG dataset. Here are the accuracy scores for each fold and the overall accuracy:
+
+Fold 0: 0.8333333333333334
+Fold 1: 0.8333333333333334
+Fold 2: 0.8333333333333334
+Fold 3: 1.0
+Overall Accuracy: 0.875
