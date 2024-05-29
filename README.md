@@ -226,16 +226,24 @@ AST3/vectors.tsv: Vector file for AST3 dataset.
 We performed cross-validation using StratifiedKFold with 4 splits. Here are the accuracy scores for each fold and the overall accuracy:
 
 Fold 0: 0.6666666666666666
+
 Fold 1: 0.8333333333333334
+
 Fold 2: 0.5
+
 Fold 3: 0.8
+
 Overall Accuracy: 0.7
 
 ### DFG Dataset
 Similarly, we performed cross-validation using StratifiedKFold with 4 splits for the DFG dataset. Here are the accuracy scores for each fold and the overall accuracy:
 
 Fold 0: 0.8333333333333334
+
 Fold 1: 0.8333333333333334
+
 Fold 2: 0.8333333333333334
+
 Fold 3: 1.0
+
 Overall Accuracy: 0.875
