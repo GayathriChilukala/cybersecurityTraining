@@ -209,16 +209,6 @@ Sets up the Power Take-Off (PTO) components and constraints, which control the e
 ## Overview
 This project focuses on detecting hardware Trojans using machine learning techniques. Hardware Trojans are malicious alterations to a circuit that can cause incorrect behavior or leak sensitive information. Detecting such Trojans is crucial for ensuring the security and reliability of hardware systems.
 
-## Project Structure
-The project is organized into the following directories and files:
-
-├── DFG3
-│   ├── metadata.tsv
-│   └── vectors.tsv
-├── AST3
-    ├── metadata.tsv
-    └── vectors.tsv
-
 ## Data
 The data consists of two main parts:
 
