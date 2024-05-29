@@ -24,7 +24,6 @@ The Inception model is designed using a series of inception modules with residua
 
 The ResNet model utilizes residual blocks to enable deeper networks without degradation in performance.
 
-
 #### Performance
 
 - Normal Accuracy: 94.85%
@@ -247,3 +246,18 @@ Fold 2: 0.8333333333333334
 Fold 3: 1.0
 
 Overall Accuracy: 0.875
+
+# IEEE 39-Bus System Incidence Matrix
+This repository contains a MATLAB script for generating the incidence matrix for the IEEE 39-Bus system, also known as the New England power system. The incidence matrix is used to represent the connectivity of the buses and lines within the system.
+
+## Introduction
+The IEEE 39-Bus system is a standard test case used in power system studies. It consists of 39 buses, 46 transmission lines, and 10 generators. The system is widely used for testing power system algorithms, especially those related to stability and reliability analysis.
+
+## Installation
+To use this script, you need to have MATLAB installed on your system. There are no additional dependencies required.
+
+## Details
+The script creates a 39x39 incidence matrix A for the IEEE 39-Bus system. The matrix is initialized to zeros and then populated with values representing the connections between the buses. The values for lines and transformers are assigned based on the connectivity in the system. Finally, the matrix is symmetrized, and an identity matrix is added to account for self-connections.
+
+## Results
+After running the script, the incidence matrix A will be generated and stored in the MATLAB workspace. This matrix can be used for further analysis and simulation of the IEEE 39-Bus system.
