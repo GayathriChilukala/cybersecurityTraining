@@ -261,3 +261,41 @@ The script creates a 39x39 incidence matrix A for the IEEE 39-Bus system. The ma
 
 ## Results
 After running the script, the incidence matrix A will be generated and stored in the MATLAB workspace. This matrix can be used for further analysis and simulation of the IEEE 39-Bus system.
+
+# IEEE 14 Bus Case Analysis with Graph Signal Processing
+## Overview
+This project involves the analysis of the IEEE 14 bus case using Graph Signal Processing (GSP) techniques. The main objectives include power flow calculations, graph construction, graph Fourier Transform (GFT), and detection of false data injection attacks.
+
+## Usage
+1)Load the IEEE 14 Bus Case:
+The script loads the IEEE 14 bus case using MATPOWER.
+
+2)Power Flow Calculations:
+Run power flow calculations using MATPOWER.
+
+3)Building Graph:
+The bus coordinates and edges are used to build a graph.
+
+4)Graph Signal Processing:
+
+-> Compute the Graph Laplacian
+
+-> Perform Eigen-decomposition
+
+-> Compute GFT of the original and corrupted signals
+
+-> Plotting the results
+
+5)False Data Injection Attack:
+Introduce false data at a specific bus and analyze the effect.
+
+6)Detection of Attack:
+
+-> Apply a high-pass filter
+
+-> Calculate the amount of high-frequency component
+
+-> Determine if an attack occurred based on a threshold
+
+## Results
+The script generates plots showing the original and corrupted graph signals, their GFTs, and the detection of the false data injection attack.
