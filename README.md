@@ -323,18 +323,6 @@ The results indicate that the GCN model effectively learned the node classificat
 
 This repository contains an exercise designed to evaluate the security of IoT devices that utilize AWS S3 for cloud storage. The exercise demonstrates how hard-coded AWS credentials can expose sensitive data and outlines steps for penetration testing using AWS CLI.
 
-## Table of Contents
-- [Overview](#overview)
-- [Prerequisites](#prerequisites)
-- [Setup](#setup)
-- [Hands-on Experiment](#hands-on-experiment)
-  - [Step 1: Install AWS CLI](#step-1-install-aws-cli)
-  - [Step 2: Configure AWS CLI with Provided Credentials](#step-2-configure-aws-cli-with-provided-credentials)
-  - [Step 3: List S3 Buckets and Files](#step-3-list-s3-buckets-and-files)
-  - [Step 4: Download Files from S3 Bucket](#step-4-download-files-from-s3-bucket)
-- [Security Best Practices](#security-best-practices)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 This exercise simulates a scenario where an IP camera stores screenshots and videos on AWS S3, using hard-coded access keys. As a security penetration tester, your task is to assess the security of this setup by using the provided AWS credentials to access the stored data.
