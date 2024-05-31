@@ -318,3 +318,75 @@ Step 10: Test model performance
 
 ## Results
 The results indicate that the GCN model effectively learned the node classifications in the IEEE 14 bus system, with a high training accuracy and reasonable testing performance. The visualizations helped in understanding the model's predictions and performance across different epochs.
+
+# IoT Cloud Security: AWS S3 Example
+
+This repository contains an exercise designed to evaluate the security of IoT devices that utilize AWS S3 for cloud storage. The exercise demonstrates how hard-coded AWS credentials can expose sensitive data and outlines steps for penetration testing using AWS CLI.
+
+## Table of Contents
+- [Overview](#overview)
+- [Prerequisites](#prerequisites)
+- [Setup](#setup)
+- [Hands-on Experiment](#hands-on-experiment)
+  - [Step 1: Install AWS CLI](#step-1-install-aws-cli)
+  - [Step 2: Configure AWS CLI with Provided Credentials](#step-2-configure-aws-cli-with-provided-credentials)
+  - [Step 3: List S3 Buckets and Files](#step-3-list-s3-buckets-and-files)
+  - [Step 4: Download Files from S3 Bucket](#step-4-download-files-from-s3-bucket)
+- [Security Best Practices](#security-best-practices)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Overview
+This exercise simulates a scenario where an IP camera stores screenshots and videos on AWS S3, using hard-coded access keys. As a security penetration tester, your task is to assess the security of this setup by using the provided AWS credentials to access the stored data.
+
+## Prerequisites
+- AWS CLI installed on your machine.
+- Basic knowledge of command-line operations.
+- A testing environment (e.g., Kali Linux) is recommended for penetration testing exercises.
+
+## Setup
+
+### Step 1: Install AWS CLI
+Follow the official AWS CLI installation guide: [AWS CLI Installation Guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+For Kali Linux, use the command:
+```bash
+sudo apt install awscli
+```
+
+### Step 2: Configure AWS CLI with Provided Credentials
+Use the following command to configure AWS CLI:
+```bash
+aws configure
+```
+Enter the following details when prompted:
+- **IAM Access Key ID:** 
+- **IAM Secret Access Key:** 
+- Leave the default region name and output format as they are.
+
+## Hands-on Experiment
+
+### Step 3: List S3 Buckets and Files
+List all S3 buckets associated with the account:
+```bash
+aws s3 ls
+```
+To list files in a specific bucket:
+```bash
+aws s3 ls s3://<bucket-name>/
+```
+
+### Step 4: Download Files from S3 Bucket
+To download a specific file (e.g., a screenshot from an IP camera):
+```bash
+aws s3 cp s3://ip-camera-screenshot/alice@test.com/1717008630973.jpg 1717008630973.jpg
+```
+
+## Security Best Practices
+This exercise highlights the risks of using hard-coded AWS credentials. To enhance security, consider the following best practices:
+- Use IAM roles and policies to grant necessary permissions.
+- Avoid embedding credentials in code. Use environment variables or AWS Secrets Manager.
+- Regularly rotate access keys.
+- Implement strong access controls and encryption for sensitive data.
+
+
