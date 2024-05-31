@@ -299,3 +299,22 @@ Introduce false data at a specific bus and analyze the effect.
 
 ## Results
 The script generates plots showing the original and corrupted graph signals, their GFTs, and the detection of the false data injection attack.
+
+# Graph Convolutional Network for IEEE 14 Bus Case
+## Overview
+This project demonstrates the application of Graph Convolutional Networks (GCNs) on the IEEE 14 bus case using the Deep Graph Library (DGL) and PyTorch. The main objectives are to build a GCN model, train it on a dataset of node features and labels, and evaluate its performance on a test set.
+
+## Usage
+Step 1: Load necessary packages
+Step 2: Create graph from list of edges
+Step 3: Visualize the graph
+Step 4: Load dataset
+Step 5: Add node features and labels to the graph
+Step 6: Define a Graph Convolutional Network (GCN)
+Step 7: Train-Test split
+Step 8: Training loop
+Step 9: Visualize iterations
+Step 10: Test model performance
+
+## Results
+The results indicate that the GCN model effectively learned the node classifications in the IEEE 14 bus system, with a high training accuracy and reasonable testing performance. The visualizations helped in understanding the model's predictions and performance across different epochs.
