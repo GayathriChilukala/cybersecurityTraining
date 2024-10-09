@@ -377,6 +377,3 @@ This exercise highlights the risks of using hard-coded AWS credentials. To enhan
 - Regularly rotate access keys.
 - Implement strong access controls and encryption for sensitive data.
 
-````javascript
-document.write("Hello World!")
-````
